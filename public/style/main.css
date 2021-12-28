@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'iranSans';
+    src: url('../fonts/A-Iranian-Sans/Iranian Sans.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    direction: rtl;
+    font-family: 'iranSans';
+    scroll-behavior: smooth;
+    background-color: #f4f4f4;
+    /* refactor books page change it */
+}
+
+ul {
+    list-style: none;
+}
+
+.swal2-popup {
+    font-size: 10px !important;
+}
+
+.english-word {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* a {
+    text-decoration: none;
+    color: #333;
+} */
+
+/* for Slider */
+
+/* Imoort each style components */
+
+
+
+@import 'Header/header.css';
+@import 'Footer/footer.css';
+@import 'ImageCol/imagecol.css';
+@import 'ImageColTwo/imagecoltwo.css';
+@import 'CategoryIntro/categoryintro.css';
+@import 'ImageColFour/imagecolfour.css';
+@import 'ImageColFive/imagecolfive.css';
+@import 'Login/login.css';
+@import 'Signup/signup.css';
+@import 'Cart/cart.css';
+@import 'Contact/contact.css';
+@import 'About/about.css';
+@import 'Faq/faq.css';
+@import 'Kala/kala.css';
+@import 'BooksPage/bookspage.css';
+@import 'Error/error.css';
+@import 'ForgotPassword/forgotpassword.css';
+@import 'Profile/profile.css';
+/* For some Coponent use Scoped Styling */

@@ -1,0 +1,128 @@
+.login-page {
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    width: 25%;
+    border: 1px solid #e0e0e2;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.login-card div .login-title {
+    font-family: 'Architects Daughter', cursive;
+    color: red;
+    text-align: center;
+    margin: 0 0 3rem 0;
+    font-weight: bold;
+}
+
+.login-card .login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.login-card .login-content h4 {
+    margin: 0 0 1rem 0;
+}
+
+.login-card .login-content .login-form-content label {
+    display: block;
+    margin: 0.7rem 0;
+    font-size: 14px;
+}
+
+.login-card .login-content .login-form-content input {
+    width: 300px;
+    padding: 0.5rem;
+    border: 1px solid #e0e0e2;
+    background-color: #fff;
+    border-radius: 8px;
+    font-family: 'iranSans';
+}
+
+.login-card .login-content .login-form-content button {
+    margin: 1rem 0;
+    text-align: center;
+    display: block;
+    width: 300px;
+    border: none;
+    padding: 1rem 0;
+    border-radius: 8px;
+    background-color: #ef394e;
+    color: #fff;
+    font-family: 'iranSans';
+    cursor: pointer;
+}
+
+.login-card .login-content .for-signup {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.login-card .login-content .for-signup p {
+    margin: 0.7rem 0;
+}
+
+.login-card .login-content .for-signup a p {
+    color: #ef394e;
+}
+
+/* firts bigger size after that small size */
+
+@media(max-width:1400px) {
+    .login-card {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-card .login-content .login-form-content button {
+        width: 500px;
+    }
+
+    .login-card .login-content .login-form-content input {
+        width: 500px;
+    }
+}
+
+@media(max-width:678px) {
+    .login-card .login-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-card {
+        width: 95%;
+    }
+
+    .login-card .login-content .login-form-content button {
+        width: 300px;
+    }
+
+    .login-card .login-content .login-form-content input {
+        width: 300px;
+    }
+
+    .login-page {
+        height: 105vh !important;
+    }
+}
+
+@media(max-height:678px) {
+    .login-page {
+        height: 100%;
+    }
+}

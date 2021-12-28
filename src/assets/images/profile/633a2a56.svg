@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="135" viewBox="0 0 180 135">
+    <defs>
+        <linearGradient id="a" x1="85.573%" x2="0%" y1="49.996%" y2="50.005%">
+            <stop offset="0%" stop-color="#A1A3A8"/>
+            <stop offset="100%" stop-color="#C1C3C7"/>
+        </linearGradient>
+        <filter id="b" width="104%" height="486.7%" x="-2%" y="-193.3%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation=".581"/>
+        </filter>
+        <linearGradient id="c" x1="48.207%" x2="50%" y1="42.459%" y2="5.277%">
+            <stop offset="0%" stop-color="#56C7DA"/>
+            <stop offset="74.363%" stop-color="#169DBC"/>
+            <stop offset="100%" stop-color="#037B99"/>
+        </linearGradient>
+        <linearGradient id="e" x1="30.024%" x2="30.024%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#E9E9E9"/>
+            <stop offset="2.973%" stop-color="#EEE"/>
+            <stop offset="89.469%" stop-color="#DDD"/>
+            <stop offset="100%" stop-color="#EDEDED"/>
+        </linearGradient>
+        <path id="d" d="M0 0h66.471c2.6 0 4.708 2.108 4.708 4.708V81.09H11.916a4.708 4.708 0 0 1-4.708-4.708V7.208A7.208 7.208 0 0 0 0 0z"/>
+        <filter id="f" width="293.3%" height="274%" x="-96.7%" y="-87%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5.226"/>
+        </filter>
+        <linearGradient id="h" x1="50%" x2="50%" y1="92.604%" y2="0%">
+            <stop offset="0%" stop-color="#008EB2"/>
+            <stop offset="28.538%" stop-color="#0FABC6"/>
+            <stop offset="100%" stop-color="#87D3E1"/>
+        </linearGradient>
+        <linearGradient id="i" x1="100%" x2="0%" y1="100%" y2="100%">
+            <stop offset="0%" stop-color="#18AEC8"/>
+            <stop offset="100%" stop-color="#008EB2"/>
+        </linearGradient>
+        <radialGradient id="k" cx="-38.979%" cy="131.901%" r="120.914%" fx="-38.979%" fy="131.901%" gradientTransform="scale(.97826 1) rotate(-44.609 -.394 1.33)">
+            <stop offset="0%" stop-color="#FFD500" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFD500"/>
+        </radialGradient>
+        <ellipse id="j" cx="13.245" cy="26.174" rx="6.217" ry="6.082"/>
+        <radialGradient id="m" cx="-38.979%" cy="131.901%" r="533.11%" fx="-38.979%" fy="131.901%" gradientTransform="scale(.16 1) rotate(-9.165 -1.413 14.085)">
+            <stop offset="0%" stop-color="#FFD500" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFD500"/>
+        </radialGradient>
+        <path id="l" d="M0 21.714h27.03v4.325H0z"/>
+        <radialGradient id="o" cx="-38.979%" cy="131.901%" r="134.901%" fx="-38.979%" fy="131.901%" gradientTransform="matrix(.62422 -.62945 .50566 .77704 -.813 .049)">
+            <stop offset="0%" stop-color="#FFD500" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFD500"/>
+        </radialGradient>
+        <path id="n" d="M13.515 0c5.474 0 9.911 4.437 9.911 9.911v8.108c0 2.005 1.6 3.645 3.604 3.695H0a3.696 3.696 0 0 0 3.604-3.695V9.91C3.604 4.437 8.041 0 13.515 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M118.932 122.536l-.677.901h-86.72l29.138-.9z" filter="url(#b)"/>
+        <path fill="url(#c)" d="M4.708 0h5c2.6 0 4.708 2.108 4.708 4.708v44.847H0V4.708C0 2.108 2.108 0 4.708 0z" transform="translate(46.852 22.525)"/>
+        <g transform="translate(54.06 22.525)">
+            <mask id="g" fill="#fff">
+                <use xlink:href="#d"/>
+            </mask>
+            <use fill="url(#e)" xlink:href="#d"/>
+            <path fill="#030A16" d="M51.357 5.406h16.218v18.02H51.357z" filter="url(#f)" mask="url(#g)" opacity=".3"/>
+        </g>
+        <path fill="url(#h)" d="M27.931 67.575h63.971v8.807c0 2.6-2.108 4.708-4.708 4.708H20.723h1.715a5.493 5.493 0 0 0 5.493-5.492v-8.023z" transform="translate(46.852 22.525)"/>
+        <path stroke="#008EB2" stroke-width="1.742" d="M72.951 70.248h9.971v9.971h-9.97z"/>
+        <path fill="url(#i)" d="M17.119 7.208h25.228v2.703H17.119zM17.119 1.802h25.228v2.703H17.119z" transform="translate(72.08 69.377)"/>
+        <g>
+            <path stroke="#008EB2" stroke-width="1.742" d="M72.951 53.13h9.971v9.97h-9.97z"/>
+            <path fill="url(#i)" d="M17.119 7.208h25.228v2.703H17.119zM17.119 1.802h25.228v2.703H17.119z" transform="translate(72.08 52.258)"/>
+        </g>
+        <g>
+            <path stroke="#008EB2" stroke-width="1.742" d="M72.951 36.01h9.971v9.971h-9.97z"/>
+            <path fill="url(#i)" d="M17.119 7.208h25.228v2.703H17.119zM17.119 1.802h25.228v2.703H17.119z" transform="translate(72.08 35.139)"/>
+        </g>
+        <g>
+            <g transform="translate(109.021 12.614)">
+                <use fill="#FF6A36" xlink:href="#j"/>
+                <use fill="url(#k)" fill-opacity=".8" xlink:href="#j"/>
+            </g>
+            <g transform="translate(109.021 12.614)">
+                <use fill="#FF6A36" xlink:href="#l"/>
+                <use fill="url(#m)" xlink:href="#l"/>
+            </g>
+            <g transform="translate(109.021 12.614)">
+                <use fill="#FF6A36" xlink:href="#n"/>
+                <use fill="url(#o)" xlink:href="#n"/>
+            </g>
+        </g>
+        <g stroke="#FFD500" stroke-width="1.742">
+            <path d="M135.995 17.35a14.462 14.462 0 0 0-8.158-8.235M141.555 16.921a19.878 19.878 0 0 0-12.664-13.177M109.077 17.35a14.462 14.462 0 0 1 8.158-8.235M103.517 16.921a19.878 19.878 0 0 1 12.664-13.177"/>
+        </g>
+    </g>
+</svg>

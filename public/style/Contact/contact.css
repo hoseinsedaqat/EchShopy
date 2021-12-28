@@ -1,0 +1,369 @@
+.contact-container {
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.callHShopy {
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 2rem;
+    border: 1px solid #9999;
+    border-radius: 5px;
+}
+
+.callHShopy .callHShopyTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.callHShopy .callHShopyTitle::after {
+    content: '';
+    width: 60px;
+    background-color: #ef394e;
+    border: 0.3px solid #ef394e;
+    margin: 0.5rem 0;
+}
+
+.callHShopy .beforeCall {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.6rem 0;
+    padding: 0 0 0.7rem 0;
+    border-bottom: 1px solid #9999;
+}
+
+.callHShopy .beforeCall p {
+    font-size: 13px;
+}
+
+.callHShopy .beforeCall button {
+    padding: 0.7rem 2rem;
+    background-color: #fff;
+    border: 1px solid #0fabc6;
+    color: #0fabc6;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'iranSans';
+    transition: all 0.3s ease;
+}
+
+.callHShopy .beforeCall button:hover {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.callForm {
+    margin: 1rem 0;
+}
+
+.callForm p {
+    font-size: 13px;
+}
+
+.callFormGp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 0;
+}
+
+.callFormGp div {
+    margin: 0 0 0 1rem;
+}
+
+.callFormGp div label {
+    display: block;
+    font-size: 13px;
+}
+
+.callFormGp div select, input {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.7rem 0;
+    border-radius: 8px;
+    border: 1px solid #9999;
+    font-family: 'iranSans';
+}
+
+.callForm .textarea {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    resize: none;
+}
+
+.callForm .textarea label {
+    display: block;
+    font-size: 13px;
+}
+
+.callForm .textarea textarea {
+    resize: none;
+    width: 98.3%;
+    margin: 0.5rem 0;
+    padding: 0.7rem 0;
+    border-radius: 8px;
+    border: 1px solid #9999;
+    font-family: 'iranSans';
+}
+
+.callForm .buttonCall {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0.5rem 0 0 1.2rem;
+}
+
+.callForm .buttonCall button {
+    padding: 0.8rem 2rem;
+    color: #fff;
+    font-family: 'iranSans';
+    border: none;
+    background-color: #0fabc6;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cardForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+
+.cardForm .cardFormFirst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardForm .cardFormFirst div {
+    /* margin: 1rem 1rem;
+    border: 1px solid #9999;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-radius: 5px; */
+    width: 100px;
+    height: 130px;
+    text-align: center;
+    border: 1px solid #e0e0e2;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 7px 10px;
+}
+
+.cardForm .cardFormFirst div p:nth-child(1) {
+    font-size: 27px;
+    font-weight: 900;
+    color: #666;
+}
+
+.cardForm .cardFormFirst div p:nth-child(2) {
+    border-bottom: 1px solid #9999;
+    color: #666;
+    padding: 0.5rem 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cardForm .cardFormFirst div p:nth-child(3) {
+    margin: 0.5rem 0 0 0;
+    font-size: 11px;
+}
+
+.cardForm .cardFormSecond {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.cardForm .cardFormSecond div {
+    /* margin: 1rem 1rem;
+    border: 1px solid #9999;
+    padding: 1.5rem 0.8rem;
+    text-align: center;
+    border-radius: 5px; */
+    width: 100px;
+    height: 130px;
+    text-align: center;
+    border: 1px solid #e0e0e2;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 7px 10px;
+}
+
+.cardForm .cardFormSecond div p:nth-child(1) {
+    font-size: 27px;
+    font-weight: 900;
+    color: #666;
+}
+
+.cardForm .cardFormSecond div p:nth-child(2) {
+    color: #666;
+    border-bottom: 1px solid #9999;
+    padding: 0.5rem 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.cardForm .cardFormSecond div p:nth-child(3) {
+    margin: 0.5rem 0 0 0;
+    font-size: 11px;
+}
+
+.callContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 0.3px solid #9999;
+}
+
+.callContent div {
+    margin: 0 0 2rem 0.7rem;
+}
+
+.callContent div ul li {
+    margin: 1rem 0;
+    font-size: 13px;
+    color: #888;
+}
+
+.callContent div p {
+    margin: 0.5rem 0 0 0;
+    font-size: 13px;
+    color: #888;
+}
+
+.callContent .callContentImage img {
+    height: 350px;
+    width: 100%;
+}
+
+.myInformationWebsite {
+    border-bottom: 0.3px solid #9999;
+    padding: 0.5rem 0;
+}
+
+.myInformationWebsite ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myInformationWebsite ul li {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.myInformationWebsite ul li i {
+    margin: 0 0.5rem;
+    align-self: center;
+    font-size: 20px;
+    color: #888;
+}
+
+.myInformationWebsite ul li p {
+    font-size: 15px;
+    color: #333;
+}
+
+.myInformationWebsite ul li:nth-child(3) p {
+    background-color: #eee;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+
+.theEndInfo {
+    margin: 0.7rem 0;
+    /* text-align: center; */
+}
+
+.theEndInfo p {
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
+}
+
+.theEndInfo p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.theEndInfo p i {
+    font-size: 20px;
+}
+
+@media(max-width:678px) {
+
+    .callHShopy .beforeCall {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .callHShopy .beforeCall button {
+        margin: 0.5rem 0;
+    }
+
+    .callHShopy .beforeCall p {
+        font-size: 11px;
+        color: #777;
+        line-height: 20px;
+    }
+
+    .callForm p {
+        font-size: 11px;
+        color: #777;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .callFormGp {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .callForm .buttonCall {
+        justify-content: center;
+        margin: 0.5rem 0;
+    }
+
+    .callForm .textarea textarea {
+        width: 93%;
+    }
+
+    .cardForm .cardFormFirst {
+        flex-direction: column;
+    }
+
+    .cardForm .cardFormSecond {
+        flex-direction: column;
+    }
+
+    .callContent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .myInformationWebsite ul li p {
+        font-size: 12px;
+        margin: 0.5rem 0;
+    }
+
+    .myInformationWebsite ul li {
+        flex-direction: column;
+        margin: 0.7rem 0;
+        text-align: center;
+    }
+
+    .callContent div p {
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    .theEndInfo p {
+        font-size: 12px;
+    }
+}

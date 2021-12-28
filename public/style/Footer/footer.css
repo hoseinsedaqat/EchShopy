@@ -1,0 +1,369 @@
+.footer {
+    border-top: 1px solid #eee;
+    background-color: #fff;
+    margin: 2rem 0 0 0;
+}
+
+.footer .f-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 3rem 0 3rem;
+}
+
+.footer .f-1 h2 {
+    color: #ef394e;
+}
+
+.footer .f-1 button {
+    padding: 0.7rem 1rem;
+    background-color: #fff;
+    border: 1px solid #a1a3a8;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'iranSans';
+}
+
+.footer .f-1 button i {
+    margin: 0 0.2rem;
+}
+
+.footer .f-2 {
+    margin: 1rem 3rem 0 3rem;
+}
+
+.footer .f-2 span {
+    font-size: 13px;
+}
+
+.footer .f-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .f-3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.footer .f-3 div img {
+    margin: 1rem 0;
+    width: 40px;
+    height: 40px;
+}
+
+.footer .f-3 div p {
+    font-size: 13px;
+}
+
+.footer hr {
+    margin: 1rem 3rem;
+}
+
+.footer .f-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 3rem;
+}
+
+.footer .f-4 div h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    margin: 1rem 0;
+}
+
+.footer .f-4 div li {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 1rem 0;
+}
+
+.footer .f-4 div li span {
+    transition: all 0.1s ease-in-out;
+}
+
+.footer .f-4 div li span:hover {
+    transform: translate(-1px, -1px);
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer .f-4 .s-f {
+    display: flex;
+}
+
+.footer .f-4 .s-f i {
+    font-size: 25px;
+    color: #a1a3a8;
+    margin: 0 0 0 3rem;
+    cursor: pointer;
+}
+
+.footer .f-4 .s-f li:nth-child(1) i:hover {
+    color: #e83e8c;
+}
+
+.footer .f-4 .s-f li:nth-child(2) i:hover {
+    color: skyblue;
+}
+
+.footer .f-4 .s-f li:nth-child(3) i:hover {
+    color: #dc3545;
+}
+
+.footer .f-4 .s-f li:nth-child(4) i:hover {
+    color: blue;
+}
+
+.footer .f-4 ul input {
+    border: none;
+    width: 250px;
+    padding: 1rem 0.5rem;
+    background-color: #eee;
+    border-radius: 8px;
+    font-family: 'iranSans';
+}
+
+.footer .f-4 ul button {
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    padding: 1rem 0.5rem;
+    background-color: #eee;
+    border-radius: 8px;
+    font-family: 'iranSans';
+    margin: 0 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.footer .f-4 ul button:hover {
+    background-color: #ef394e;
+    color: #fff;
+}
+
+.footer .f-5 {
+    display: flex;
+    margin: 0 3rem;
+}
+
+.footer .f-5 div:nth-child(1) h3 {
+    font-size: 16px;
+}
+
+.footer .f-5 div:nth-child(1) p {
+    font-size: 14px;
+    margin: 0.5rem 0 0 0;
+    color: #777;
+    line-height: 2;
+}
+
+.footer .f-5 div:nth-child(2) {
+    display: flex;
+}
+
+.footer .f-5 div:nth-child(2) div {
+    border: 1px solid #9999;
+    padding: 2rem;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+}
+
+.footer .f-5 div:nth-child(2) img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer .f-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+@media(max-width:1300px) {
+    .footer .f-1 {
+        flex-direction: column;
+    }
+
+    .footer .f-1 h2 {
+        margin: 0 0 1rem 0;
+    }
+
+    .footer .f-2 {
+        text-align: center;
+    }
+
+    .footer .f-3 {
+        flex-direction: column;
+    }
+
+    .footer .f-4 {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer .f-4 div {
+        border-bottom: 1px dotted #333;
+        padding: 1rem;
+    }
+
+    .footer .f-4 div .s-f {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+
+    .footer .f-4 div .s-f i {
+        font-size: 20px;
+        text-align: center;
+        margin: 0.7rem 1rem;
+    }
+
+    .footer .f-4 ul button {
+        margin: 0.9rem 0.3rem;
+    }
+
+    .footer .f-4 div:nth-child(4) {
+        margin: 0 2rem;
+        border: none;
+    }
+
+    .footer .f-4 div:nth-child(3) {
+        margin: 0;
+    }
+
+    .footer .f-4 div:nth-child(2) {
+        margin: 0;
+    }
+
+    .footer .f-5 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .footer .f-5 div:nth-child(2) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 0 0;
+    }
+
+    .footer .f-5 div:nth-child(2) div {
+        margin: 1rem 2rem;
+    }
+
+    .footer .f-6 {
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media(max-width:1000px) {
+    .footer .f-5 div:nth-child(2) img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media(max-width:678px) {
+    .footer .f-1 {
+        flex-direction: column;
+    }
+
+    .footer .f-1 h2 {
+        margin: 0 0 1rem 0;
+    }
+
+    .footer .f-2 {
+        text-align: center;
+    }
+
+    .footer .f-3 {
+        flex-direction: column;
+    }
+
+    .footer .f-4 {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer .f-4 div {
+        border-bottom: 1px dotted #333;
+        padding: 1rem;
+    }
+
+    .footer .f-4 div .s-f {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+
+    .footer .f-4 div .s-f i {
+        font-size: 20px;
+        text-align: center;
+        margin: 0.7rem 1rem;
+    }
+
+    .footer .f-4 ul button {
+        margin: 0.9rem 0.3rem;
+        width: 30%;
+    }
+
+    .footer .f-4 div:nth-child(4) {
+        margin: 0 2rem;
+        border: none;
+    }
+
+    .footer .f-4 div:nth-child(3) {
+        margin: 0;
+    }
+
+    .footer .f-4 div:nth-child(2) {
+        margin: 0;
+    }
+
+    .footer .f-5 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .footer .f-5 div:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 0 0;
+    }
+
+    .footer .f-5 div:nth-child(2) div {
+        margin: 1rem 0;
+    }
+
+    .footer .f-5 div:nth-child(2) img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer .f-6 {
+        text-align: center;
+        padding: 1rem;
+        line-height: 25px;
+    }
+}

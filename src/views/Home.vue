@@ -1,18 +1,51 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Header />
+    <Showcase />
+    <ProductCardTwo />
+    <ImageCol />
+    <ProductCard />
+    <ImageColTwo />
+    <ProductCol />
+    <CategoryIntro />
+    <ProductColTwo />
+    <ImageColFour />
+    <ProductColThree />
+    <ImageColFive />
+    <Footer />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+import Showcase from "@/components/Showcase.vue";
+import ProductCard from "@/components/ProductCard.vue";
+import ImageCol from "@/components/ImageCol.vue";
+import ProductCardTwo from "@/components/ProductCardTwo.vue";
+import ImageColTwo from "@/components/ImageColTwo.vue";
+import ProductCol from "@/components/ProductCol.vue";
+import CategoryIntro from "@/components/CategoryIntro.vue";
+import ProductColTwo from "@/components/ProductColTwo.vue";
+import ImageColFour from "@/components/ImageColFour.vue";
+import ProductColThree from "@/components/ProductColThree.vue";
+import ImageColFive from "@/components/ImageColFive.vue";
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    Footer,
+    Showcase,
+    ProductCard,
+    ImageCol,
+    ProductCardTwo,
+    ImageColTwo,
+    ProductCol,
+    CategoryIntro,
+    ProductColTwo,
+    ImageColFour,
+    ProductColThree,
+    ImageColFive,
+  },
+};
 </script>

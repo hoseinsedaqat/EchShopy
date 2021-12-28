@@ -1,0 +1,567 @@
+.kala {
+    background-color: #fff;
+    margin-top: 1rem;
+}
+
+.kala-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.kala-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.kala-grid-container div:nth-child(1) {
+    margin: 1rem 0 0 2rem;
+}
+
+.kala-grid-container div img {
+    width: 100%;
+    height: auto;
+}
+
+.kala-grid-container div:nth-child(2) {
+    margin: 1rem 0 0 1rem;
+    grid-column: 2/span 2;
+}
+
+.kala-grid-container div:nth-child(2) h5 {
+    border-bottom: 1px solid #9999;
+    padding: 0 0 0.7rem 0;
+}
+
+.kala-grid-container div:nth-child(2) .kala-info-one {
+    margin: 1rem 0;
+    font-size: 12px;
+}
+
+.kala-grid-container div:nth-child(2) .kala-info-one i {
+    color: green;
+}
+
+.kala-grid-container div:nth-child(2) ul p {
+    font-size: 15px;
+    color: #444;
+}
+
+.kala-grid-container div:nth-child(2) ul li {
+    margin: 1rem 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.kala-grid-container div:nth-child(2) ul li i {
+    color: #9999;
+    font-size: 8px;
+}
+
+.kala-container div:nth-child(2) .goods-warning {
+    font-size: 12px;
+    padding: 0.5rem 0;
+    color: #444;
+}
+
+.kala-grid-container div:nth-child(2) .post-free {
+    border: 1px solid #9999;
+    margin: 0 0 1rem 0;
+    border-radius: 10px;
+    padding: 0 2rem;
+}
+
+.kala-grid-container div:nth-child(2) .post-free div {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.kala-grid-container div:nth-child(2) .post-free div .post-free-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.kala-grid-container div:nth-child(2) .post-free div .post-free-title i {
+    margin: 0 0 0 0.3rem;
+    color: #ef394e;
+}
+
+.kala-grid-container div:nth-child(2) .post-free div .post-free-title .post-block {
+    margin: 0.5rem 0 0 0;
+}
+
+.kala-grid-container div:nth-child(2) .post-free div img {
+    width: 150px;
+}
+
+.kala-grid-container div:nth-child(3) {
+    margin: 2.5rem 0 1rem 0;
+    border: 1px solid #e4e4e4;
+    background-color: #f5f5f5;
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+
+.kala-grid-container div:nth-child(3) .kala-buy-info {
+    position: relative;
+    font-size: 13px;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #9999;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.kala-grid-container div:nth-child(3) .kala-buy-info:hover {
+    background-color: #e4e4e4;
+}
+
+.kala-grid-container div:nth-child(3) .kala-buy-info .kala-buy-info-hover {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: -48px;
+    right: -360px;
+    width: 350px;
+    border: 1px solid #555;
+}
+
+.hover-product i {
+    color: #ef394e;
+    margin: 0 0 0 0.4rem;
+}
+
+.hover-precent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-precent h4 {
+    margin: 0.3rem 0;
+    color: #00a049;
+    font-size: 20px;
+}
+
+.hover-precent span {
+    margin: 0.3rem 0;
+    color: #333 !important;
+}
+
+.hover-progress-bars {
+    border: none !important;
+    background-color: #fff !important;
+    width: 100%;
+    display: flex;
+    margin: 0.6rem 0 !important;
+}
+
+.hover-progress-bars .h-p-b-1 {
+    background-color: #00a049;
+    width: 160px;
+    height: 18px;
+    border-radius: 0 5px 5px 0;
+}
+
+.hover-progress-bars .h-p-b-2 {
+    background-color: #65aa57 !important;
+    width: 100px;
+    height: 18px;
+}
+
+.hover-progress-bars .h-p-b-3 {
+    background-color: #b1b64d !important;
+    width: 50px;
+    height: 18px;
+    border-radius: 5px 0 0 5px;
+}
+
+.hover-agree-user {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #888;
+    margin: 0.5rem 0;
+}
+
+.hover-last-inforamtion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hover-last-inforamtion span {
+    margin: 0 0.5rem;
+}
+
+.hover-last-information-texts {
+    color: #333 !important;
+}
+
+.kala-grid-container div:nth-child(3) .kala-buy-info:hover .kala-buy-info-hover {
+    display: block;
+}
+
+.kala-grid-container div:nth-child(3) .kala-buy-info p {
+    margin: 0.5rem 0;
+}
+
+.kala-grid-container div:nth-child(3) .kala-buy-info span {
+    color: green;
+}
+
+.kala-grid-container div:nth-child(3) .kala-guaranty {
+    border: none;
+    border-bottom: 1px solid #9999;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 13px;
+}
+
+.kala-grid-container div:nth-child(3) .kala-post {
+    margin: 1rem 0;
+    border-bottom: 1px solid #9999;
+    padding: 0.5rem;
+    font-size: 13px;
+}
+
+.kala-grid-container div:nth-child(3) .kala-price {
+    font-size: 14px;
+}
+
+.kala-grid-container div:nth-child(3) .kala-price .kala-price-2 {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.kala-last-col button {
+    background-color: #ef394e;
+    color: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    border: none;
+    font-family: 'iranSans';
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .kala-data button {
+    border: none;
+    cursor: pointer;
+    font-family: 'iranSans';
+    padding: 1rem 2rem;
+    border-left: 1px solid #999;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.5s ease;
+}
+
+.kala-data button:hover {
+
+    background-color: #ef394e;
+    color: #fff;
+} */
+
+.kala-data button {
+    background-color: #fff;
+}
+
+.showDataProduct {
+    border: none;
+    cursor: pointer;
+    font-family: 'iranSans';
+    padding: 1rem 2rem;
+    border-left: 1px solid #999;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    /* border-radius: 0 5px 5px 0; */
+    /* background-color: #ef394e; */
+    color: #333;
+}
+
+.hideDataProduct {
+    border: none;
+    cursor: pointer;
+    font-family: 'iranSans';
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #999;
+    /* border-radius: 0 5px 5px 0; */
+}
+
+/* 
+.kala-data button:nth-child(2) {
+    border-radius: 0;
+} */
+
+/* .kala-data button:nth-child(3) {
+    border-left: none;
+    border-radius: 5px 0 0 5px;
+} */
+
+.kala-data .naqd {
+    margin: 1rem 0;
+}
+
+.kala-data .naqd h4 {
+    font-size: 16px;
+    color: #444;
+    margin: 0.5rem 0;
+}
+
+.kala-data .naqd span {
+    font-size: 14px;
+    color: #333;
+}
+
+.kala-data .naqd p {
+    font-size: 14px;
+    margin: 0.7rem 0;
+    line-height: 25px;
+}
+
+.kala-data .profile {
+    margin: 1rem 0;
+}
+
+.kala-data .profile h4 {
+    font-size: 16px;
+    color: #444;
+    margin: 0.5rem 0;
+}
+
+.kala-data .profile span {
+    font-size: 14px;
+    color: #333;
+}
+
+.kala-data .profile .kala-profile {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.kala-data .profile .kala-profile div {
+    margin: 0.5rem 0 0.5rem 3rem;
+}
+
+.kala-data .profile .kala-profile .kala-profile-2 {
+    grid-column: 2/span 2;
+    width: 100%;
+}
+
+.kala-data .profile .kala-profile .kala-profile-2 ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 1rem 0;
+}
+
+.kala-data .profile .kala-profile .kala-profile-2 ul li p {
+    font-size: 11px;
+}
+
+.kala-data .profile .kala-profile .kala-profile-2 ul li .kala-profile-label {
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.kala-data .comment {
+    margin: 1rem 0;
+}
+
+.kala-data .comment .kala-comment {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.kala-data .comment h4 {
+    font-size: 16px;
+    color: #444;
+    margin: 0.5rem 0;
+}
+
+.kala-data .comment span {
+    font-size: 14px;
+    color: #333;
+}
+
+.kala-data .comment .kala-comment-1 .kala-comment-progress {
+    margin: 1rem 0;
+}
+
+.kala-data .comment .kala-comment-1 .kala-comment-progress progress {
+    width: 83%;
+    margin: 0 0 0 0.5rem;
+}
+
+.kala-data .comment .kala-comment-1 .kala-comment-progress p {
+    font-size: 12px;
+}
+
+.kala-data .comment .kala-comment-1 .kala-comment-btn {
+    background-color: #ef394e;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    font-family: 'iranSans';
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.kala-data .comment .kala-comment-2 {
+    grid-column: 2/span 3;
+    margin: 1rem 1.5rem 1rem 0;
+}
+
+.kala-data .comment .kala-comment-2 .kala-user-comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+}
+
+.kala-data .comment .kala-comment-2 .kala-user-comment div img {
+    width: 50px;
+    height: 50px;
+    margin: 0 0.3rem;
+}
+
+.kala-data .comment .kala-comment-2 .kala-user-comment div p {
+    font-size: 14px;
+    margin: 0.3rem 0;
+}
+
+.kala-grid-container .kala-put-new-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.kala-grid-container .kala-put-new-details i {
+    cursor: pointer;
+}
+
+.kala-grid-container div:nth-child(1) .kala-gallery-pic {
+    background-color: #ef394e;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    font-family: 'iranSans';
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.forlike {
+    color: red;
+}
+
+.fordislike {
+    color: gray;
+}
+
+.fa-share-alt:hover {
+    color: #019bc2;
+}
+
+.fa-bell:hover {
+    color: #f0ed3c;
+}
+
+.fa-chart-bar:hover {
+    color: #6bb927;
+}
+
+@media(max-width:811px) {
+    .kala-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .kala-grid-container div:nth-child(2) {
+        grid-column: 1;
+    }
+
+    .kala-data .comment .kala-comment {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .kala-data .comment .kala-comment-2 {
+        grid-column: 1;
+        margin: 1rem 0;
+    }
+
+    .kala-grid-container div:nth-child(3) .kala-buy-info .kala-buy-info-hover {
+        top: -90px;
+        right: 100px;
+    }
+
+}
+
+@media(max-width:678px) {
+    .kala-grid-container div:nth-child(2) .post-free div {
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .kala-grid-container div:nth-child(2) .post-free div img {
+        width: 100px;
+    }
+
+    .kala-data .profile .kala-profile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .kala-data .profile .kala-profile .kala-profile-2 {
+        grid-column: 1;
+    }
+
+    .kala-data button {
+        padding: 1rem 0.7rem;
+    }
+
+    .kala-data .comment .kala-comment-2 .kala-user-comment {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .kala-grid-container div:nth-child(2) .post-free div .post-free-title {
+        font-size: 9px;
+    }
+
+    .kala-grid-container div:nth-child(3) .kala-buy-info .kala-buy-info-hover {
+        width: 250px;
+        top: -90px;
+        right: 20px;
+    }
+
+    .kala-grid-container div:nth-child(1) {
+        margin: 1rem 0;
+    }
+}
+
+@media(max-height:678px) {
+    .kala-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .kala-grid-container div:nth-child(2) {
+        grid-column: 1;
+    }
+
+    .kala-grid-container div:nth-child(3) .kala-buy-info .kala-buy-info-hover {
+        right: -20px;
+        top: -90px;
+    }
+}

@@ -1,0 +1,40 @@
+.image-col-five {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.image-col-five div {
+    margin: 0;
+}
+
+.image-col-five div img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+@media(max-width:1300px) {
+    .image-col-five div {
+        margin: 0 1rem;
+    }
+}
+
+@media(max-width:678px) {
+    .image-col-five {
+        margin: 2rem 1rem;
+    }
+
+    /* .image-col-five div img {
+        width: 300px;
+        height: 220px;
+    } */
+    .image-col-five div img {
+        border-radius: 5px;
+    }
+
+
+}

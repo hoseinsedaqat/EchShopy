@@ -9,8 +9,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "sha.js": "^2.4.9",
+    "swiper": "^5.4.5",
     "vue": "^2.6.11",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-router": "^3.2.0",
+    "vue-sweetalert2": "^5.0.2",
+    "vuelidate": "^0.7.7",
     "vuex": "^3.4.0"
   },
   "devDependencies": {

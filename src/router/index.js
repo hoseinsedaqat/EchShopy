@@ -1,6 +1,25 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import About from '../views/About.vue'
+import Login from '../views/Login.vue'
+import Signup from '../views/Signup.vue'
+import Cart from '../views/Cart.vue'
+import Contact from '../views/Contact.vue'
+import Faq from '../views/Faq.vue'
+import ProductPage from '../views/ProductPage.vue'
+import BookPage from '../views/BookPage.vue'
+// import ErrorPage from '../views/Error.vue'
+import ProductBook from '../views/ProductBook.vue'
+import ProductLaptop from '../views/ProductLaptop.vue'
+import ProductMobile from '../views/ProductMobile.vue'
+import BooksPage from '../views/EachBookPage.vue'
+import ForgotPassword from '../views/ForgotPassword.vue'
+import Profile from '../views/Profile.vue'
+import ProfileFavoriteList from '../views/ProfileFavoriteList.vue'
+import ProfileDataForm from '../views/ProfileDataForm.vue'
+
+import { checkAuth } from '../utils/Auth'
 
 Vue.use(VueRouter)
 
@@ -11,12 +30,96 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
+    path: '/aboutus',
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: About
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/signup',
+    name: 'Signup',
+    component: Signup
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  },
+  {
+    path: '/faq',
+    name: 'Faq',
+    component: Faq
+  },
+  {
+    path: '/product',
+    name: 'ProdcutPage',
+    component: ProductPage
+  },
+  {
+    path: '/books',
+    name: 'BookPage',
+    component: BookPage
+  },
+  // ErrorPage
+  {
+    path: '*',
+    name: 'ErrorPage',
+    component: () => import('../views/Error.vue')
+  },
+  {
+    path: '/book/:id',
+    name: 'ProductBook',
+    component: ProductBook
+  },
+  {
+    path: '/laptop/:id',
+    name: 'ProductLaptop',
+    component: ProductLaptop
+  },
+  {
+    path: '/mobile/:id',
+    name: 'ProductMobile',
+    component: ProductMobile
+  },
+  {
+    path: '/forgotpassword',
+    name: 'ForgotPassword',
+    component: ForgotPassword
+  },
+  {
+    path: '/books/:id',
+    name: 'EachBookPage',
+    component: BooksPage
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    beforeEnter: checkAuth,
+    component: Profile
+  },
+  {
+    path: '/profile/favoritelist',
+    name: 'FavoriteList',
+    beforeEnter: checkAuth,
+    component: ProfileFavoriteList
+  },
+  {
+    path: '/profile/update-profile',
+    name: 'ProfileDataForm',
+    beforeEnter: checkAuth,
+    component: ProfileDataForm
   }
 ]
 
@@ -27,3 +130,6 @@ const router = new VueRouter({
 })
 
 export default router
+
+
+// use before enter for Profile

@@ -1,0 +1,134 @@
+.signup-page {
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-card {
+    width: 25%;
+    border: 1px solid #e0e0e2;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.signup-card div .signup-title {
+    font-family: 'Architects Daughter', cursive;
+    color: red;
+    text-align: center;
+    margin: 0 0 3rem 0;
+    font-weight: bold;
+}
+
+.signup-card .signup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.signup-card .signup-content h4 {
+    margin: 0 0 1rem 0;
+}
+
+.signup-card .signup-content .signup-form-content label {
+    display: block;
+    margin: 0.7rem 0;
+    font-size: 14px;
+}
+
+.signup-card .signup-content .signup-form-content input {
+    width: 300px;
+    padding: 0.5rem;
+    border: 1px solid #e0e0e2;
+    background-color: #fff;
+    border-radius: 8px;
+    font-family: 'iranSans';
+}
+
+.signup-card .signup-content .signup-form-content button {
+    margin: 1rem 0;
+    text-align: center;
+    display: block;
+    width: 300px;
+    border: none;
+    padding: 1rem 0;
+    border-radius: 8px;
+    background-color: #ef394e;
+    color: #fff;
+    font-family: 'iranSans';
+    cursor: pointer;
+}
+
+.signup-card .signup-content .for-signup {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.signup-card .signup-content .for-terms {
+    margin: 1rem 0;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+}
+
+/* firts bigger size after that small size */
+
+@media(max-width:1400px) {
+    .signup-card .signup-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup-card {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup-card .signup-content .signup-form-content button {
+        width: 500px;
+    }
+
+    .signup-card .signup-content .signup-form-content input {
+        width: 500px;
+    }
+}
+
+@media(max-width:678px) {
+    .signup-card .signup-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup-card {
+        width: 95%;
+    }
+
+    .signup-card .signup-content .signup-form-content button {
+        width: 310px;
+    }
+
+    .signup-card .signup-content .signup-form-content input {
+        width: 310px;
+    }
+
+    .signup-page {
+        height: 120vh !important;
+    }
+}
+
+@media(max-height:678px) {
+    .signup-page {
+        height: 100%;
+    }
+}
