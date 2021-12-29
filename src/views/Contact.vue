@@ -147,7 +147,7 @@
             </div>
           </div>
           <div class="callContentImage">
-            <img src="https://i.stack.imgur.com/yEshb.gif" alt="" />
+            <img src="../assets/images/contact/contact-us-img.png" alt="" />
           </div>
         </div>
         <div class="myInformationWebsite">
