@@ -33,6 +33,7 @@
 <script>
 import { mapActions } from "vuex";
 import { required } from "vuelidate/lib/validators";
+import sha from "sha.js";
 export default {
   name: "Login",
   data() {
@@ -69,7 +70,12 @@ export default {
   methods: {
     ...mapActions(["Login"]),
     login() {
-      if (this.$v.$invalid) {
+      var getUser = JSON.parse(localStorage.getItem("userAuth"));
+      if (
+        this.$v.$invalid ||
+        getUser.email !== this.user.email ||
+        getUser.token !== sha("sha256").update(this.user.pass).digest("hex")
+      ) {
         this.$swal({
           icon: "error",
           title: "لطفا اطلاعات را به درستی وارد نمایید",

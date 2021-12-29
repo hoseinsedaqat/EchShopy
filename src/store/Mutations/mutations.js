@@ -1,6 +1,6 @@
 import sha from 'sha.js';
 import router from '../../router';
-
+import { rQuantity } from '../function/removeQuantity';
 const mutations = {
     addToCart: (state, product) => {
         const qP = state.basketCart.find(pro => pro.id === product.id);
@@ -29,14 +29,16 @@ const mutations = {
     },
 
     removeQuantity: (state, idx) => {
-        const qP = state.basketCart.find(pro => pro.id === idx.idx);
-        if (qP.quantity > 1 && qP) {
-            qP.quantity--;
-            localStorage.setItem('dataBasketCart', JSON.stringify(state.basketCart));
-        } else if (qP.quantity <= 1 && qP) {
-            state.basketCart.splice(idx.index, 1);
-            localStorage.setItem('dataBasketCart', JSON.stringify(state.basketCart));
-        }
+        // define new Version
+        rQuantity(state, idx)
+        // const qP = state.basketCart.find(pro => pro.id === idx.idx);
+        // if (qP.quantity > 1 && qP) {
+        //     qP.quantity--;
+        //     localStorage.setItem('dataBasketCart', JSON.stringify(state.basketCart));
+        // } else if (qP.quantity <= 1 && qP) {
+        //     state.basketCart.splice(idx.index, 1);
+        //     localStorage.setItem('dataBasketCart', JSON.stringify(state.basketCart));
+        // }
         // console.log(idx);
     },
 
