@@ -1,20 +1,13 @@
 import sha from 'sha.js';
 import router from '../../router';
 import { rQuantity } from '../function/removeQuantity';
+import { addToCart } from '../function/addToCart'
 
 // Mutations it's change very soon for more readable;
 
 const mutations = {
     addToCart: (state, product) => {
-        const qP = state.basketCart.find(pro => pro.id === product.id);
-        // qP that Mean Quantity for each Product
-        if (!qP) {
-            state.basketCart.push(product);
-            localStorage.setItem('dataBasketCart', JSON.stringify(state.basketCart));
-        } else {
-            qP.quantity++;
-            localStorage.setItem('dataBasketCart', JSON.stringify(state.basketCart));
-        }
+        addToCart(state, product)
     },
 
     dataCart: (state) => {
