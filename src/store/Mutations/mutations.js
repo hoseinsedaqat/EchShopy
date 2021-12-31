@@ -1,7 +1,9 @@
 import sha from 'sha.js';
 import router from '../../router';
 import { rQuantity } from '../function/removeQuantity';
-import { addToCart } from '../function/addToCart'
+import { addToCart } from '../function/addToCart';
+import { dataCart } from '../function/dataCart';
+import { addQuantity } from '../function/addQuantity';
 
 // Mutations it's change very soon for more readable;
 
@@ -11,17 +13,11 @@ const mutations = {
     },
 
     dataCart: (state) => {
-        if (localStorage.getItem('dataBasketCart')) {
-            state.basketCart = JSON.parse(localStorage.getItem('dataBasketCart'));
-        }
+        dataCart(state)
     },
 
     addQuantity: (state, idx) => {
-        const qP = state.basketCart.find(pro => pro.id === idx);
-        if (qP) {
-            qP.quantity++;
-            localStorage.setItem('dataBasketCart', JSON.stringify(state.basketCart));
-        }
+        addQuantity(state, idx)
     },
 
     removeQuantity: (state, idx) => {
