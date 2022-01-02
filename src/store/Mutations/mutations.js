@@ -4,6 +4,7 @@ import { rQuantity } from '../function/removeQuantity';
 import { addToCart } from '../function/addToCart';
 import { dataCart } from '../function/dataCart';
 import { addQuantity } from '../function/addQuantity';
+import { signUp } from '../function/signUp';
 
 // Mutations it's change very soon for more readable;
 
@@ -25,13 +26,7 @@ const mutations = {
     },
 
     signUp: (state, user) => {
-        localStorage.setItem('userAuth', JSON.stringify({
-            auth: false,
-            name: user.name,
-            email: user.email,
-            token: sha('sha256').update(user.pass).digest('hex')
-        }))
-        router.push('/login')
+        signUp(state, user)
     },
 
     Login: (state, user) => {
