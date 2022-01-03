@@ -1,10 +1,11 @@
-import sha from 'sha.js';
-import router from '../../router';
 import { rQuantity } from '../function/removeQuantity';
 import { addToCart } from '../function/addToCart';
 import { dataCart } from '../function/dataCart';
 import { addQuantity } from '../function/addQuantity';
 import { signUp } from '../function/signUp';
+import { login } from '../function/login';
+import { logOut } from '../function/logOut';
+import { changeUseData } from '../function/changeUserData';
 
 // Mutations it's change very soon for more readable;
 
@@ -30,39 +31,14 @@ const mutations = {
     },
 
     Login: (state, user) => {
-        var getUser = JSON.parse(localStorage.getItem('userAuth'))
-        if (getUser.email === user.email && getUser.token === sha('sha256').update(user.pass).digest('hex')) {
-            // console.log(true);
-            getUser.auth = true;
-            localStorage.setItem('userAuth', JSON.stringify(getUser));
-            router.push('/');
-        }
+        login(state, user)
     },
 
     logOut: () => {
-        var getUser = JSON.parse(localStorage.getItem('userAuth'));
-        if (getUser.auth) {
-            getUser.auth = false;
-            localStorage.setItem('userAuth', JSON.stringify(getUser))
-            // Learn something new router.push add you from this page to other page 
-            // but router.go can reload plus other thing that Cool
-            // i know it before but i thought this two method both once, but they have diffrent
-            router.go('/');
-        }
+        logOut();
     },
     changeData: (state, user) => {
-        var getUser = JSON.parse(localStorage.getItem('userAuth'));
-        if (getUser.auth) {
-            if (user.email) {
-                getUser.email = user.email;
-                localStorage.setItem('userAuth', JSON.stringify(getUser))
-                router.go('/profile/update-profile');
-            } else {
-                // For Test
-                alert('please enter email...')
-            }
-        }
-        // router.go('/profile/update-profile')
+        changeUseData(state, user)
     },
 
     backToUp: () => {
