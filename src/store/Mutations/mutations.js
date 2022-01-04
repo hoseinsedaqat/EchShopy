@@ -6,6 +6,7 @@ import { signUp } from '../function/signUp';
 import { login } from '../function/login';
 import { logOut } from '../function/logOut';
 import { changeUseData } from '../function/changeUserData';
+import { closeNav, openNav, backToUp } from '../function/navigation';
 
 // Mutations it's change very soon for more readable;
 
@@ -42,18 +43,15 @@ const mutations = {
     },
 
     backToUp: () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        backToUp()
     },
 
     openNav: () => {
-        document.getElementById("mySideNav").style.width = "250px";
-        document.body.style.opacity = "0.8";
+        openNav()
     },
 
     closeNav: () => {
-        document.getElementById("mySideNav").style.width = "0";
-        document.body.style.opacity = "2";
+        closeNav()
     }
 }
 
