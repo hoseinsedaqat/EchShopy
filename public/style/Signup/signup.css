@@ -75,8 +75,6 @@
     text-align: center;
 }
 
-/* firts bigger size after that small size */
-
 @media(max-width:1400px) {
     .signup-card .signup-content {
         display: flex;

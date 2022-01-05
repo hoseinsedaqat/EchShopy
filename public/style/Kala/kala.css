@@ -253,22 +253,6 @@
     cursor: pointer;
 }
 
-/* .kala-data button {
-    border: none;
-    cursor: pointer;
-    font-family: 'iranSans';
-    padding: 1rem 2rem;
-    border-left: 1px solid #999;
-    border-radius: 0 5px 5px 0;
-    transition: all 0.5s ease;
-}
-
-.kala-data button:hover {
-
-    background-color: #ef394e;
-    color: #fff;
-} */
-
 .kala-data button {
     background-color: #fff;
 }
@@ -281,8 +265,6 @@
     border-left: 1px solid #999;
     border-top: 1px solid #999;
     border-right: 1px solid #999;
-    /* border-radius: 0 5px 5px 0; */
-    /* background-color: #ef394e; */
     color: #333;
 }
 
@@ -292,18 +274,7 @@
     font-family: 'iranSans';
     padding: 1rem 2rem;
     border-bottom: 1px solid #999;
-    /* border-radius: 0 5px 5px 0; */
 }
-
-/* 
-.kala-data button:nth-child(2) {
-    border-radius: 0;
-} */
-
-/* .kala-data button:nth-child(3) {
-    border-left: none;
-    border-radius: 5px 0 0 5px;
-} */
 
 .kala-data .naqd {
     margin: 1rem 0;
@@ -510,7 +481,6 @@
 
 @media(max-width:678px) {
     .kala-grid-container div:nth-child(2) .post-free div {
-        /* flex-direction: column; */
         align-items: center;
         justify-content: space-between;
     }

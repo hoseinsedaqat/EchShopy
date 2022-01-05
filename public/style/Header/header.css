@@ -143,11 +143,9 @@ header {
     position: absolute;
     background-color: #fff;
     min-width: 1200px;
-    /* padding: 1rem; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 10;
     border-radius: 0 0 5px 5px;
-    /* color: blue; */
 }
 
 .stright-header .dropdown-two {
@@ -161,11 +159,9 @@ header {
     position: absolute;
     background-color: #fff;
     min-width: 1000px;
-    /* padding: 1rem; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 10;
     border-radius: 0 0 5px 5px;
-    /* color: blue; */
 }
 
 .stright-header .dropdown-three {
@@ -179,11 +175,9 @@ header {
     position: absolute;
     background-color: #fff;
     min-width: 660px;
-    /* padding: 1rem; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 10;
     border-radius: 0 0 5px 5px;
-    /* color: blue; */
 }
 
 /* dropdown Menu */
@@ -192,14 +186,9 @@ header {
     display: flex;
 }
 
-/* .stright-header .dropdown-two:hover .dropdown-two-content, .stright-header .dropdown-two:hover .dropdown-two-content {
-    display: flex;
-} */
-
 .stright-header .dropdown-one .dropdown-one-content div {
     display: flex;
     flex-direction: column;
-    /* padding: 0 2rem 0 0; */
 }
 
 .stright-header .dropdown-two .dropdown-two-content div {
@@ -210,8 +199,6 @@ header {
 
 .stright-header .dropdown-one .dropdown-one-content a, .stright-header .dropdown-two .dropdown-two-content a {
     color: #000000;
-    /* display: block; */
-    /* width: 100%; */
     display: flex;
     text-decoration: none;
     padding: 1rem 0.5rem 1rem 3rem;
@@ -250,7 +237,6 @@ header {
 }
 
 .stright-header .dropdown-one .dropdown-one-content .dropRow .dropCol div {
-    /* margin: 0 0.5rem 0 0; */
     margin: 0 0 0 1rem;
     padding: 0 0 0.5rem 0;
 }
@@ -404,10 +390,6 @@ a:hover {
     transition: 0.3s;
     cursor: pointer;
 }
-
-/* .sidenav li:hover {
-    color: #f1f1f1;
-} */
 
 .sidenav .closebtn {
     position: absolute;

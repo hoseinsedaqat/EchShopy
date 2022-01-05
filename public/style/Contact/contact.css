@@ -141,11 +141,6 @@
 }
 
 .cardForm .cardFormFirst div {
-    /* margin: 1rem 1rem;
-    border: 1px solid #9999;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    border-radius: 5px; */
     width: 100px;
     height: 130px;
     text-align: center;
@@ -182,11 +177,6 @@
 }
 
 .cardForm .cardFormSecond div {
-    /* margin: 1rem 1rem;
-    border: 1px solid #9999;
-    padding: 1.5rem 0.8rem;
-    text-align: center;
-    border-radius: 5px; */
     width: 100px;
     height: 130px;
     text-align: center;
@@ -279,7 +269,6 @@
 
 .theEndInfo {
     margin: 0.7rem 0;
-    /* text-align: center; */
 }
 
 .theEndInfo p {

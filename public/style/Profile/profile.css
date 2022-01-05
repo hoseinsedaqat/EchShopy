@@ -24,7 +24,6 @@
 
 .view-profile {
     display: flex;
-    /* flex-direction: column; */
     border-bottom: 1px solid #9999;
 }
 
@@ -118,8 +117,6 @@
     display: flex;
     width: 100%;
     align-items: center;
-    /* justify-content: space-around; */
-    /* margin: 0.7rem 0; */
     padding: 1.2rem 0;
 }
 
@@ -161,11 +158,6 @@
 .profile-manager-content .user-profile-data div {
     margin: 0 0.4rem;
 }
-
-/* 
-.profile-manager .profile-manager-content div {
-    margin: 0 0.4rem;
-} */
 
 .profile-manager-content .profile-personal-info h4 {
     margin: 0.7rem 0;
@@ -570,12 +562,6 @@ td i {
     .profile-alerts-list .favorite-product img {
         width: 50px
     }
-
-    /* .view-profile {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    } */
 
     .profile-manager-content .user-profile-data {
         flex-direction: column;

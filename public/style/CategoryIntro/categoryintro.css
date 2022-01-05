@@ -38,30 +38,20 @@
     color: #00bfd6;
 }
 
-/* .category-col div img {
-    width: 1270px;
-    height: 200px;
-    border-radius: 15px;
-} */
-
 @media(max-width:1200px) {
     .category-col {
         margin: 2rem 0;
     }
+
     .category-col .category-intro {
         flex-direction: column;
     }
+
     .category-col .category-intro div {
         margin-bottom: 3rem;
     }
+
     .category-col .category-intro div:last-child {
         margin: 0;
     }
 }
-
-/* @media(max-width:678px) {
-    .category-col div img {
-        width: 300px;
-        height: 220px;
-    }
-} */

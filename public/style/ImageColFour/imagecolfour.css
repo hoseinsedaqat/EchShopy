@@ -15,7 +15,6 @@
 }
 
 .image-col-four div img {
-    /* width: 295px; */
     width: 100%;
     height: auto;
     border-radius: 30px;
@@ -27,10 +26,6 @@
         grid-template-columns: repeat(2, 1fr);
         margin: 2rem 10rem;
     }
-
-    /* .image-col-four div {
-        margin: 1rem 2rem;
-    } */
 }
 
 @media(max-width:800px) {

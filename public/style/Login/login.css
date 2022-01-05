@@ -76,8 +76,6 @@
     color: #ef394e;
 }
 
-/* firts bigger size after that small size */
-
 @media(max-width:1400px) {
     .login-card {
         width: 70%;
