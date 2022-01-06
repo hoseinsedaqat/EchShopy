@@ -69,7 +69,7 @@
             <p>{{ Number(totalCount).toLocaleString() }} تومان</p>
           </div>
           <div>
-            <button>ادامه فرایند خرید</button>
+            <button @click="finalBought()">ادامه فرایند خرید</button>
           </div>
         </div>
       </div>
@@ -137,6 +137,9 @@ export default {
     },
     rQuantity(idx, index) {
       this.removeQuantity({ idx, index });
+    },
+    finalBought() {
+      alert("از خرید شما متشکریم");
     },
   },
   mounted() {
