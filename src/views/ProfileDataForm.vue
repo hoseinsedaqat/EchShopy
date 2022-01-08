@@ -68,7 +68,7 @@ export default {
           showConfirmButton: false,
           timer: 1000,
         });
-      } else {
+      } else if (validationEmail.test(this.userInfo.email)) {
         this.changeData(this.userInfo);
       }
     },

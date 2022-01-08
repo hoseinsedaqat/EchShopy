@@ -9,7 +9,7 @@ import '../public/style/main.css'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 
-// Local Components
+// Global Components
 Vue.component('Header', Header)
 Vue.component('Footer', Footer)
 
