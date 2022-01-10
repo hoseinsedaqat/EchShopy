@@ -6,7 +6,7 @@ function changeUseData(state, user) {
         if (user.email) {
             getUser.email = user.email;
             localStorage.setItem('userAuth', JSON.stringify(getUser))
-            router.go('/');
+            router.push('/');
         } else {
             // For Test
             alert('please enter email...')
