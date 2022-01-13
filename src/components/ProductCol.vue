@@ -103,6 +103,10 @@ a {
   color: #333;
 }
 
+a:hover {
+  color: #ef394e;
+}
+
 .product-col .show-book-product .card-col-1 {
   display: flex;
   flex-direction: column;

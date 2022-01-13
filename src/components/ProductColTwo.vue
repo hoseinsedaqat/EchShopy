@@ -78,6 +78,10 @@ a {
   color: #333;
 }
 
+a:hover {
+  color: #ef394e;
+}
+
 .product-col .title-product {
   display: flex;
   align-items: center;
