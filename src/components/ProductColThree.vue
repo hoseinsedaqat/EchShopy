@@ -65,6 +65,11 @@ a {
   text-decoration: none;
   color: #333;
 }
+
+a:hover {
+  color: #ef394e;
+}
+
 .product-col {
   max-width: 1300px;
   display: flex;
