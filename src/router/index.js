@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
@@ -9,7 +9,6 @@ import Contact from '../views/Contact.vue'
 import Faq from '../views/Faq.vue'
 import ProductPage from '../views/ProductPage.vue'
 import BookPage from '../views/BookPage.vue'
-// import ErrorPage from '../views/Error.vue'
 import ProductBook from '../views/ProductBook.vue'
 import ProductLaptop from '../views/ProductLaptop.vue'
 import ProductMobile from '../views/ProductMobile.vue'
@@ -21,13 +20,15 @@ import ProfileDataForm from '../views/ProfileDataForm.vue'
 
 import { checkAuth } from '../utils/Auth'
 
+// Chunk with Import and NprogressBar
+
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: () => import('../views/Home.vue')
   },
   {
     path: '/aboutus',
