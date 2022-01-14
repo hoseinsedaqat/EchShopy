@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Home from '../views/Home.vue'
-import About from '../views/About.vue'
+// import About from '../views/About.vue'
 import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
 import Cart from '../views/Cart.vue'
@@ -18,6 +17,7 @@ import Profile from '../views/Profile.vue'
 import ProfileFavoriteList from '../views/ProfileFavoriteList.vue'
 import ProfileDataForm from '../views/ProfileDataForm.vue'
 
+// Check for Authentication
 import { checkAuth } from '../utils/Auth'
 
 // Chunk with Import and NprogressBar
@@ -36,7 +36,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: About
+    component: () => import('../views/About.vue')
   },
   {
     path: '/login',
