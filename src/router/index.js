@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Signup from '../views/Signup.vue'
-import Cart from '../views/Cart.vue'
+// import Cart from '../views/Cart.vue'
 import Contact from '../views/Contact.vue'
 import Faq from '../views/Faq.vue'
 import ProductPage from '../views/ProductPage.vue'
@@ -49,7 +48,7 @@ const routes = [
   {
     path: '/cart',
     name: 'Cart',
-    component: Cart
+    component: () => import('../views/Cart.vue')
   },
   {
     path: '/contact',
