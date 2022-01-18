@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Cart from '../views/Cart.vue'
-import Contact from '../views/Contact.vue'
 import Faq from '../views/Faq.vue'
 import ProductPage from '../views/ProductPage.vue'
 import BookPage from '../views/BookPage.vue'
@@ -53,7 +51,7 @@ const routes = [
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    component: async () => await import('../views/Contact.vue')
   },
   {
     path: '/faq',
