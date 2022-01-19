@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Faq from '../views/Faq.vue'
 import ProductPage from '../views/ProductPage.vue'
 import BookPage from '../views/BookPage.vue'
 import ProductBook from '../views/ProductBook.vue'
@@ -56,7 +55,7 @@ const routes = [
   {
     path: '/faq',
     name: 'Faq',
-    component: Faq
+    component: async () => await import('../views/Faq.vue')
   },
   {
     path: '/product',
