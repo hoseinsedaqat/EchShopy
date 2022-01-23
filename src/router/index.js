@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import ProductPage from '../views/ProductPage.vue'
-import BookPage from '../views/BookPage.vue'
+// import BookPage from '../views/BookPage.vue'
 import ProductBook from '../views/ProductBook.vue'
 import ProductLaptop from '../views/ProductLaptop.vue'
 import ProductMobile from '../views/ProductMobile.vue'
@@ -65,7 +64,7 @@ const routes = [
   {
     path: '/books',
     name: 'BookPage',
-    component: BookPage
+    component: () => import('../views/BookPage.vue')
   },
   // ErrorPage
   {
