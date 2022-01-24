@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import BookPage from '../views/BookPage.vue'
-import ProductBook from '../views/ProductBook.vue'
+// import ProductBook from '../views/ProductBook.vue'
 import ProductLaptop from '../views/ProductLaptop.vue'
 import ProductMobile from '../views/ProductMobile.vue'
 import BooksPage from '../views/EachBookPage.vue'
@@ -75,7 +74,7 @@ const routes = [
   {
     path: '/book/:id',
     name: 'ProductBook',
-    component: ProductBook
+    component: () => import('../views/ProductBook.vue')
   },
   {
     path: '/laptop/:id',
