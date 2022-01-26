@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import ProductLaptop from '../views/ProductLaptop.vue'
-import ProductMobile from '../views/ProductMobile.vue'
+// import ProductMobile from '../views/ProductMobile.vue'
 import BooksPage from '../views/EachBookPage.vue'
 import ForgotPassword from '../views/ForgotPassword.vue'
 import Profile from '../views/Profile.vue'
@@ -83,7 +82,7 @@ const routes = [
   {
     path: '/mobile/:id',
     name: 'ProductMobile',
-    component: ProductMobile
+    component: () => import('../views/ProductMobile.vue')
   },
   {
     path: '/forgotpassword',
