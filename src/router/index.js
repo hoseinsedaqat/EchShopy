@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import ProductMobile from '../views/ProductMobile.vue'
 import BooksPage from '../views/EachBookPage.vue'
-import ForgotPassword from '../views/ForgotPassword.vue'
+// import ForgotPassword from '../views/ForgotPassword.vue'
 import Profile from '../views/Profile.vue'
 import ProfileFavoriteList from '../views/ProfileFavoriteList.vue'
 import ProfileDataForm from '../views/ProfileDataForm.vue'
@@ -87,7 +86,7 @@ const routes = [
   {
     path: '/forgotpassword',
     name: 'ForgotPassword',
-    component: ForgotPassword
+    component: () => import('../views/ForgotPassword.vue')
   },
   {
     path: '/books/:id',
