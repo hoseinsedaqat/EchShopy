@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import BooksPage from '../views/EachBookPage.vue'
-// import ForgotPassword from '../views/ForgotPassword.vue'
+// import BooksPage from '../views/EachBookPage.vue'
 import Profile from '../views/Profile.vue'
 import ProfileFavoriteList from '../views/ProfileFavoriteList.vue'
 import ProfileDataForm from '../views/ProfileDataForm.vue'
@@ -91,7 +90,7 @@ const routes = [
   {
     path: '/books/:id',
     name: 'EachBookPage',
-    component: BooksPage
+    component: () => import('../views/BookPage.vue')
   },
   {
     path: '/profile',
