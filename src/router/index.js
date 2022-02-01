@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import BooksPage from '../views/EachBookPage.vue'
-import Profile from '../views/Profile.vue'
+// import Profile from '../views/Profile.vue'
 import ProfileFavoriteList from '../views/ProfileFavoriteList.vue'
 import ProfileDataForm from '../views/ProfileDataForm.vue'
 
@@ -96,7 +95,7 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     beforeEnter: checkAuth,
-    component: Profile
+    component: () => import('../views/Profile.vue')
   },
   {
     path: '/profile/favoritelist',
