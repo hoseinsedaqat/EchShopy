@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Profile from '../views/Profile.vue'
-import ProfileFavoriteList from '../views/ProfileFavoriteList.vue'
 import ProfileDataForm from '../views/ProfileDataForm.vue'
 
 // Check for Authentication
 import { checkAuth } from '../utils/Auth'
 
+// some stuff to add
 // Chunk with Import and NprogressBar
+// Add Error page to github
 
 Vue.use(VueRouter)
 
@@ -101,7 +101,7 @@ const routes = [
     path: '/profile/favoritelist',
     name: 'FavoriteList',
     beforeEnter: checkAuth,
-    component: ProfileFavoriteList
+    component: () => import('../views/ProfileFavoriteList.vue')
   },
   {
     path: '/profile/update-profile',
