@@ -1,6 +1,6 @@
 const actions = {
-    addToCart: ({ commit }, product) => {
-        commit('addToCart', product)
+    addToCart: async ({ commit }, product) => {
+        await commit('addToCart', product)
     },
     addQuantity: ({ commit }, idx) => {
         commit('addQuantity', idx)
