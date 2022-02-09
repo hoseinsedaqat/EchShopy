@@ -2,32 +2,32 @@ const actions = {
     addToCart: async ({ commit }, product) => {
         await commit('addToCart', product)
     },
-    addQuantity: ({ commit }, idx) => {
-        commit('addQuantity', idx)
+    addQuantity: async({ commit }, idx) => {
+        await commit('addQuantity', idx)
     },
-    removeQuantity: ({ commit }, idx) => {
-        commit('removeQuantity', idx)
+    removeQuantity: async ({ commit }, idx) => {
+        await commit('removeQuantity', idx)
     },
-    signUp: ({ commit }, user) => {
-        commit('signUp', user)
+    signUp: async({ commit }, user) => {
+        await commit('signUp', user)
     },
-    Login: ({ commit }, user) => {
-        commit('Login', user)
+    Login: async({ commit }, user) => {
+        await commit('Login', user)
     },
-    logOut: ({ commit }) => {
-        commit('logOut')
+    logOut: async({ commit }) => {
+        await commit('logOut')
     },
-    changeData: ({ commit }, user) => {
-        commit('changeData', user)
+    changeData: async({ commit }, user) => {
+        await commit('changeData', user)
     },
-    backToUp: ({ commit }) => {
-        commit('backToUp')
+    backToUp: async({ commit }) => {
+        await commit('backToUp')
     },
-    openNav: ({ commit }) => {
-        commit('openNav')
+    openNav: async({ commit }) => {
+        await commit('openNav')
     },
-    closeNav: ({ commit }) => {
-        commit('closeNav')
+    closeNav: async({ commit }) => {
+        await commit('closeNav')
     }
 }
 
