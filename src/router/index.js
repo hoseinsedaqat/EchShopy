@@ -68,7 +68,7 @@ const routes = [
   {
     path: '/book/:id',
     name: 'ProductBook',
-    component: async () => await import('@/views/ProductBook.vue')
+    component: async () => await import('../views/ProductBook.vue')
   },
   {
     path: '/laptop/:id',
@@ -88,7 +88,7 @@ const routes = [
   {
     path: '/books/:id',
     name: 'EachBookPage',
-    component: async () => await import('@/views/BookPage.vue')
+    component: async () => await import('@/views/EachBookPage.vue')
   },
   {
     path: '/profile',
