@@ -71,6 +71,10 @@ export default {
     ...mapActions(["Login"]),
     login() {
       var getUser = JSON.parse(localStorage.getItem("userAuth"));
+      if(!getUser){
+        alert('bdn miam vue swal alert nhsh ezafe miknm')
+        return
+      }
       if (
         this.$v.$invalid ||
         getUser.email !== this.user.email ||
