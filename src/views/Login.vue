@@ -72,7 +72,12 @@ export default {
     login() {
       var getUser = JSON.parse(localStorage.getItem("userAuth"));
       if(!getUser){
-        alert('bdn miam vue swal alert nhsh ezafe miknm')
+        this.$swal({
+          icon:'error',
+          title:'کاربر یافت نشد',
+          showConfirmButton:false,
+          timer:1000,
+        })
         return
       }
       if (
