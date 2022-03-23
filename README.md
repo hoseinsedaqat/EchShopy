@@ -1,4 +1,4 @@
-# 011
+# EchShopy
 
 ## Project setup
 ```
