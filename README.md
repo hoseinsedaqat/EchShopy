@@ -1,4 +1,4 @@
-# EchShopy
+# EchShopy1
 
 <div align="center">
   <img width=100% height="100%" src="https://user-images.githubusercontent.com/71232870/159702605-41996024-1144-4e6f-8c84-df07a87b72ca.jpg" />
