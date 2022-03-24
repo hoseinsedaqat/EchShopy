@@ -139,7 +139,12 @@ export default {
       this.removeQuantity({ idx, index });
     },
     finalBought() {
-      alert("از خرید شما متشکریم");
+      this.$swal({
+        icon: "success",
+        title: "از خرید شما متشکریم ✌❤",
+        showConfirmButton: false,
+        timer: 2000,
+      });
     },
   },
   mounted() {
