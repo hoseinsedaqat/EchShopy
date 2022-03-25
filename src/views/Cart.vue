@@ -75,29 +75,8 @@
       </div>
     </section>
     <section class="cart-image">
-      <div>
-        <img
-          src="../assets/images/cart/3f50a565fd2020696deb374d3e26aed37de655d0_1601820141.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="../assets/images/cart/55382a7719bdbcc008d2835cf13bba41e0cc2eaa_1594115160.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="../assets/images/cart/b0f516985ad4bc24c8bfac2b9cafb7248c129bc3_1600581865.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="../assets/images/cart/ec326f713080fe823eb289bb1bcb8f796327fb19_1600077504.jpg"
-          alt=""
-        />
+      <div v-for="(ic, idx) in CartImage" :key="(ic, idx)">
+        <img :src="ic.img" :alt="ic.id" />
       </div>
     </section>
     <Footer />
@@ -106,8 +85,14 @@
 
 <script>
 import { mapState, mapActions, mapMutations } from "vuex";
+import CartImage from "../data/CartImage/cartimage";
 export default {
   name: "Cart",
+  data() {
+    return {
+      CartImage,
+    };
+  },
   computed: {
     ...mapState(["basketCart"]),
     ...mapMutations(["dataCart"]),
