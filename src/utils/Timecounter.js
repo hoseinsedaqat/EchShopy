@@ -1,5 +1,5 @@
 function timeCount() {
-    const countDownTimer = new Date("Apr 29 2022  00:00:00").getTime();
+    const countDownTimer = new Date("Dec 29 2022  00:00:00").getTime();
     const now = new Date().getTime();
     const distance = countDownTimer - now;
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
